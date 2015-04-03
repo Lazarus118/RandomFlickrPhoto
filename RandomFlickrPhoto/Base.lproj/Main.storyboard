@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yW1-eH-1xq">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Flickr User ID-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="RandomFlickrPhoto" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xo6-4c-faz">
+                                <rect key="frame" x="271" y="263" width="58" height="30"/>
+                                <state key="normal" title="Proceed">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zGO-8D-eyx" kind="show" identifier="showPhoto" id="4CO-UJ-2HZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FLICKR USER ID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QiP-ur-1pQ">
+                                <rect key="frame" x="242" y="158" width="117" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="132115085@N04" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zi2-dG-BsF">
+                                <rect key="frame" x="231" y="187" width="138" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="AMz-Pr-vOw"/>
+                                    <constraint firstAttribute="height" constant="30" id="syZ-eL-XU6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter the ID of the user you want to randomly display photos of." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Um-TR-iDv">
+                                <rect key="frame" x="51" y="86" width="499" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Xo6-4c-faz" secondAttribute="centerX" id="7ix-E0-T32"/>
+                            <constraint firstItem="3Um-TR-iDv" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="22" id="UXz-lX-hxJ"/>
+                            <constraint firstItem="zi2-dG-BsF" firstAttribute="top" secondItem="QiP-ur-1pQ" secondAttribute="bottom" constant="8" id="Vra-jr-jH6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Um-TR-iDv" secondAttribute="trailing" constant="34" id="ZbL-1W-N7w"/>
+                            <constraint firstAttribute="centerX" secondItem="QiP-ur-1pQ" secondAttribute="centerX" constant="-0.5" id="cEQ-FT-N13"/>
+                            <constraint firstAttribute="centerX" secondItem="zi2-dG-BsF" secondAttribute="centerX" id="ess-cn-mif"/>
+                            <constraint firstItem="3Um-TR-iDv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="35" id="pEB-KL-1xI"/>
+                            <constraint firstItem="Xo6-4c-faz" firstAttribute="top" secondItem="zi2-dG-BsF" secondAttribute="bottom" constant="46" id="xf2-p4-sd7"/>
+                            <constraint firstItem="QiP-ur-1pQ" firstAttribute="top" secondItem="3Um-TR-iDv" secondAttribute="bottom" constant="51" id="ymw-gf-vAd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Flickr User ID" id="p4J-Ol-xiB"/>
+                    <connections>
+                        <outlet property="textField" destination="zi2-dG-BsF" id="EIw-Xf-bJ3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1170" y="217"/>
+        </scene>
+        <!--Photo-->
+        <scene sceneID="fWI-BX-iRD">
+            <objects>
+                <viewController id="zGO-8D-eyx" customClass="PhotoViewController" customModule="RandomFlickrPhoto" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uba-rO-47V"/>
+                        <viewControllerLayoutGuide type="bottom" id="V3a-FG-Fo4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UTJ-ff-78Z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tt-9U-WJN">
+                                <rect key="frame" x="279" y="485" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="334" id="8Vt-Sc-1d8"/>
+                                    <constraint firstAttribute="height" constant="76" id="ll2-Zh-SlG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8Vt-Sc-1d8"/>
+                                        <exclude reference="ll2-Zh-SlG"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="8Vt-Sc-1d8"/>
+                                        <include reference="ll2-Zh-SlG"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Please wait a few seconds while the User ID is being checked..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSV-yI-OxX">
+                                <rect key="frame" x="102" y="213" width="349" height="139"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" red="0.22078203914141414" green="0.22078203914141414" blue="0.22078203914141414" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="SOME DETAILS ABOUT THIS PHOTO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cv-94-B5e">
+                                <rect key="frame" x="176" y="456" width="248" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="D2q-LA-X0p"/>
+                                    <constraint firstAttribute="height" constant="21" id="oau-q2-Os9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="D2q-LA-X0p"/>
+                                        <exclude reference="oau-q2-Os9"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="D2q-LA-X0p"/>
+                                        <include reference="oau-q2-Os9"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B1w-y2-B77">
+                                <rect key="frame" x="142" y="84" width="316" height="353"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="K3i-fp-KII"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="Qlb-vh-pIn"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="R8P-KC-c1N"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="fy9-8C-eeo"/>
+                                    <constraint firstAttribute="height" constant="300" id="mBt-Xs-ubN"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="300" id="rdG-QZ-o2Z"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="K3i-fp-KII"/>
+                                        <exclude reference="Qlb-vh-pIn"/>
+                                        <exclude reference="R8P-KC-c1N"/>
+                                        <exclude reference="fy9-8C-eeo"/>
+                                        <exclude reference="mBt-Xs-ubN"/>
+                                        <exclude reference="rdG-QZ-o2Z"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="K3i-fp-KII"/>
+                                        <include reference="Qlb-vh-pIn"/>
+                                        <include reference="R8P-KC-c1N"/>
+                                        <include reference="fy9-8C-eeo"/>
+                                        <include reference="mBt-Xs-ubN"/>
+                                        <include reference="rdG-QZ-o2Z"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5tt-9U-WJN" firstAttribute="top" secondItem="6cv-94-B5e" secondAttribute="bottom" constant="8" id="0eU-3v-gzd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SSV-yI-OxX" secondAttribute="trailing" constant="17" id="8sy-aB-DT2"/>
+                            <constraint firstAttribute="centerX" secondItem="SSV-yI-OxX" secondAttribute="centerX" id="IzY-Ha-yem"/>
+                            <constraint firstAttribute="centerX" secondItem="B1w-y2-B77" secondAttribute="centerX" id="PSu-G5-W3Q"/>
+                            <constraint firstItem="SSV-yI-OxX" firstAttribute="leading" secondItem="UTJ-ff-78Z" secondAttribute="leadingMargin" constant="17" id="YgV-P2-F2R"/>
+                            <constraint firstAttribute="centerX" secondItem="5tt-9U-WJN" secondAttribute="centerX" id="aSX-Ry-i4a"/>
+                            <constraint firstItem="B1w-y2-B77" firstAttribute="top" secondItem="Uba-rO-47V" secondAttribute="bottom" constant="38" id="dFL-KK-tGv"/>
+                            <constraint firstItem="5tt-9U-WJN" firstAttribute="top" secondItem="6cv-94-B5e" secondAttribute="bottom" constant="8" id="m9L-WX-5X6"/>
+                            <constraint firstAttribute="centerY" secondItem="SSV-yI-OxX" secondAttribute="centerY" id="nsQ-aX-YEF"/>
+                            <constraint firstItem="6cv-94-B5e" firstAttribute="top" secondItem="B1w-y2-B77" secondAttribute="bottom" constant="73" id="wQ1-zC-6hh"/>
+                            <constraint firstAttribute="centerX" secondItem="6cv-94-B5e" secondAttribute="centerX" id="xXT-wQ-wFq"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="PSu-G5-W3Q"/>
+                                <exclude reference="dFL-KK-tGv"/>
+                                <exclude reference="8sy-aB-DT2"/>
+                                <exclude reference="IzY-Ha-yem"/>
+                                <exclude reference="YgV-P2-F2R"/>
+                                <exclude reference="nsQ-aX-YEF"/>
+                                <exclude reference="wQ1-zC-6hh"/>
+                                <exclude reference="xXT-wQ-wFq"/>
+                                <exclude reference="0eU-3v-gzd"/>
+                                <exclude reference="aSX-Ry-i4a"/>
+                                <exclude reference="m9L-WX-5X6"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="PSu-G5-W3Q"/>
+                                <include reference="dFL-KK-tGv"/>
+                                <include reference="8sy-aB-DT2"/>
+                                <include reference="IzY-Ha-yem"/>
+                                <include reference="YgV-P2-F2R"/>
+                                <include reference="nsQ-aX-YEF"/>
+                                <include reference="wQ1-zC-6hh"/>
+                                <include reference="xXT-wQ-wFq"/>
+                                <include reference="0eU-3v-gzd"/>
+                                <include reference="aSX-Ry-i4a"/>
+                                <include reference="m9L-WX-5X6"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Photo" id="KKv-Hq-Li0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="Ehl-uT-YlR">
+                            <connections>
+                                <action selector="refresh:" destination="zGO-8D-eyx" id="l8h-B6-9qc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="checkingUserIDLabel" destination="SSV-yI-OxX" id="K6n-U7-x47"/>
+                        <outlet property="detailLabel" destination="5tt-9U-WJN" id="H2X-hA-v23"/>
+                        <outlet property="imageView" destination="B1w-y2-B77" id="dLw-tK-mWR"/>
+                        <outlet property="refreshButton" destination="Ehl-uT-YlR" id="nMU-Gm-q2x"/>
+                        <outlet property="titleLabel" destination="6cv-94-B5e" id="DLS-ca-6zq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fkl-VJ-T7t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1864.5" y="217"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ykk-lk-4r6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yW1-eH-1xq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jLM-eh-fVx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="DdU-XO-4ro"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ben-kJ-cgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="501" y="217"/>
+        </scene>
+    </scenes>
+</document>
