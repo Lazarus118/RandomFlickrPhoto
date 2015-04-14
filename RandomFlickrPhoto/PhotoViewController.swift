@@ -28,12 +28,15 @@ class PhotoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Hide UI elements and navigation bar
-        imageView.hidden = true
-        titleLabel.hidden = true
-        detailLabel.hidden = true
-        checkingUserIDLabel.hidden = false
-        self.navigationController!.navigationBarHidden = true
+        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            // Hide UI elements and navigation bar
+            self.imageView.hidden = true
+            self.titleLabel.hidden = true
+            self.detailLabel.hidden = true
+            self.checkingUserIDLabel.hidden = false
+            self.navigationController!.navigationBarHidden = true
+            UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+        })
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -61,6 +64,7 @@ class PhotoViewController: UIViewController {
                     self.detailLabel.hidden = false
                     self.navigationController?.navigationBarHidden = false
                     self.refreshButton.enabled = true
+                    UIApplication.sharedApplication().networkActivityIndicatorVisible = false
                 })
             }
         })

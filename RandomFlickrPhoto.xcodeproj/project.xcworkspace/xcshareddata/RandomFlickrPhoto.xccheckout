@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>72F5AC9A-BB77-4BE9-A925-5E7A6868EB53</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RandomFlickrPhoto</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>291224D937A655668A73B7E85D5FD2AF74C475DA</key>
+		<string>https://github.com/zahrl/RandomFlickrPhoto.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RandomFlickrPhoto.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>291224D937A655668A73B7E85D5FD2AF74C475DA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/zahrl/RandomFlickrPhoto.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>291224D937A655668A73B7E85D5FD2AF74C475DA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>291224D937A655668A73B7E85D5FD2AF74C475DA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RandomFlickrPhoto</string>
+		</dict>
+	</array>
+</dict>
+</plist>

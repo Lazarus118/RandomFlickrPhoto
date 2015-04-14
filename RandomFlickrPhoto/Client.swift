@@ -96,10 +96,10 @@ class Client: NSObject {
         var URLArguments = [String]()
         for (key, value) in arguments {
             // Escape string value
-            let escapedString = value.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
+            let escapedString = value.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!
             // Replace spaces with +
-            let replacedString = escapedString?.stringByReplacingOccurrencesOfString(" ", withString: "+", options: NSStringCompareOptions.LiteralSearch, range: nil)
-            URLArguments += [key + "=" + "\(value)"]
+            let replacedString = escapedString.stringByReplacingOccurrencesOfString(" ", withString: "+", options: NSStringCompareOptions.LiteralSearch, range: nil)
+            URLArguments += [key + "=" + "\(replacedString)"]
         }
         return (URLArguments.isEmpty ? "" : "?") + join("&", URLArguments)
     }
